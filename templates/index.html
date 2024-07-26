@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container center">
+        <div class="info center">
+            <div class="title">
+                <h1>Random Password Generator</h1>
+            </div>
+            <div class="datetime">
+                <h4>27-May-2023 | 17:14:46</h4>
+            </div>
+        </div>
+        <div class="box center">
+            <div class="small-title center">
+                <h2>Random password Generator</h2>
+            </div>
+            <form class="center">
+                <div class="enter-password center">
+                    <h4>Enter Password Length*</h4>
+                    <input type="text" placeholder="Password Length" class="length-input">
+                </div>
+                <div class="check-boxes center">
+                    <div class="check-box">
+                        <label for="spaces">Include Spaces</label>
+                        <input type="checkbox" id="spaces" name="spaces">
+                    </div>
+                    <div class="check-box">
+                        <label for="Numbers">Include Numbers</label>
+                        <input type="checkbox" id="numbers" name="numbers">
+                    </div>
+                    <div class="check-box">
+                        <label for="symbols">Include Symbols</label>
+                        <input type="checkbox" id="symbols" name="symbols">
+                    </div>
+                    <div class="check-box">
+                        <label for="Upper">Include UpperCase Letters</label>
+                        <input type="checkbox" id="upper" name="upper">
+                    </div>
+                </div>
+                <div id="btn-div" class="center">
+                    <button>Generate Password</button>
+                    <h3>Generated Password : </h3>
+                    <h3 id="password">Jjz#=4h7P</h3>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
