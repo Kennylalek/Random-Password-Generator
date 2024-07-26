@@ -13,17 +13,17 @@
                 <h1>Random Password Generator</h1>
             </div>
             <div class="datetime">
-                <h4>27-May-2023 | 17:14:46</h4>
+                <h4>{{ date }}</h4>
             </div>
         </div>
         <div class="box center">
             <div class="small-title center">
-                <h2>Random password Generator</h2>
+                <h2>Random Password Generator</h2>
             </div>
-            <form class="center">
+            <form action="/generate" method="POST" class="center">
                 <div class="enter-password center">
                     <h4>Enter Password Length*</h4>
-                    <input type="text" placeholder="Password Length" class="length-input">
+                    <input type="text" placeholder="Password Length" class="length-input" name="length">
                 </div>
                 <div class="check-boxes center">
                     <div class="check-box">
@@ -44,9 +44,9 @@
                     </div>
                 </div>
                 <div id="btn-div" class="center">
-                    <button>Generate Password</button>
+                    <button type="submit">Generate Password</button>
                     <h3>Generated Password : </h3>
-                    <h3 id="password">Jjz#=4h7P</h3>
+                    <h3 id="password">{{ password }}</h3>
                 </div>
             </form>
         </div>
