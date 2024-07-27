@@ -15,5 +15,3 @@ def generate_password(length, spaces, digits, symbols, upper) :
     random_string = ''.join(random.choice(characters) for i in range(length))
 
     return random_string
-
-print(generate_password(10, 1, 1, 1, 1))
